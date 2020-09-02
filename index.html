@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Pizza Hub</title>
 </head>
+
 <body>
-    
+    <h1 class="text-center">Pizza Hub</h1>
+    <div class="container">
+        <div class="col">
+            <form id="maker-order">
+            <h3>Pizza Sizes</h3>
+            <select class="custom-select" id="sizes">
+                <option selected></option>
+                <option value="1">Small</option>
+                <option value="2">Medium</option>
+                <option value="3">Large</option>
+            </select>
+            <h3>Pizza Crusts</h3>
+            <select name="" class="custom-select" id="crusts">
+                <option>Pizza Baggle</option>
+                <option>Cheese on cheese</option>
+                <option>Flatbread</option>
+                
+            </select>
+            <h3>Pizza Toppings</h3>
+            
+            <select name="" class="custom-select" id="toppings">
+                <option>Pepperoni</option>
+                <option>Mushrooms</option>
+                <option>Bacons</option>
+               
+            </select>
+            <div class="pt-4 pb-5">
+            <button id="order" class="btn btn-success ">MAKE ORDER</button>
+            </div>
+            </form>
+        <div class="">
+            <div>
+                <table class="table">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Size</th>
+                        <th scope="col">Crusts</th>
+                        <th scope="col">Toppings</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td id="new-size"></td>
+                          <td id="new-crust"></td>
+                          <td id="new-topping"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+            </div>
+        </div>
+        
+    </div>
+    </div>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
