@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Pizza Hub</title>
+</head>
+
+<body>
+
+
+    <form id="maker-order" class="container">
+        <h3>Pizza Sizes</h3>
+        <select class="custom-select" id="sizes">
+            <option selected></option>
+            <option value="650">Small Ksh. 650/= </option>
+            <option value="850">Medium Ksh. 850/=</option>
+            <option value="1000">Large Ksh. 1000/=</option>
+        </select>
+        <h3>Pizza Crusts</h3>
+        <select name="" class="custom-select" id="crusts">
+            <option selected></option>
+            <option value="200">Pizza Baggle Ksh. 200</option>
+            <option value="150">Cheese on cheese Ksh. 150</option>
+            <option value="100">Flatbread Ksh. 100</option>
+
+        </select>
+        <h3>Pizza Toppings</h3>
+
+        <select name="" class="custom-select" id="toppings">
+            <option value="250">Pepperoni Ksh.250/=</option>
+            <option value="150">Mushrooms Ksh.150/=</option>
+            <option value="150">Bacons Ksh. 150/=</option>
+
+        </select>
+        <div class="form-group text-center pt-2">
+            <input type="number" style="width: 100px; align-items: color:black;" class="form-control" name="fname"
+                id="number" placeholder="Number of pizza" min="1" required>
+        </div>
+        <div class="pt-4 pb-5">
+            <button id="order" class="btn btn-success" href="table">MAKE ORDER</button>
+        </div>
+        </div>
+        <button type="number" style="background-color:green; border-radius: 70%;"
+            onclick="calculateTotal()">Delivered</button>
+        <button type="number" style="background-color:yellow; border-radius: 70%;" onclick="calculate()">Pickup</button>
+        </div>
+    </form>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
