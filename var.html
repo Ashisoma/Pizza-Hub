@@ -39,16 +39,15 @@
 
         </select>
         <div class="form-group text-center pt-2">
-            <input type="number" style="width: 100px; align-items: color:black;" class="form-control" name="fname"
-                id="number" placeholder="Number of pizza" min="1" required>
-        </div>
-        <div class="pt-4 pb-5">
-            <button id="order" class="btn btn-success" href="table">MAKE ORDER</button>
+            <input type="number" style="width: 100px; align-items:center; color:black;" class="form-control"
+                name="fname" id="number" placeholder="Number of pizza" min="1" required>
         </div>
         </div>
-        <button type="number" style="background-color:green; border-radius: 70%;"
-            onclick="calculateTotal()">Delivered</button>
-        <button type="number" style="background-color:yellow; border-radius: 70%;" onclick="calculate()">Pickup</button>
+        <div class=" text-center">
+            <span class="bl-4">
+        <button type="number" class="btn btn-success" onclick="calculateTotal()">Delivered</button>
+            </span>
+        <button type="number" class="btn btn-info" onclick="calculate()">Pickup</button>
         </div>
     </form>
     <script src="js/jquery-3.5.1.js"></script>
