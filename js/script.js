@@ -26,3 +26,5 @@ function calculate() {
     alert("You have ordered " + getNumber("") + " Pizza " + " which amounts to Kshs. " + results + " Your order is ready for pickup at our station along Moi Avenue . Contact us for more information. Thank you.");
 
 }
+
+$('.carousel').carousel()
