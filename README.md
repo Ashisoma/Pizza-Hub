@@ -1,1 +1,16 @@
 # Pizza-Hub
+### A website application for ordering Pizza 
+
+### By **ONesmus Okali**
+
+# Description
+This web application for my restaurant dubbed Pizza-Hub.The web application enables the user to choose the type of pizza they want. Have it picked up or dropped at the specified location under which the payments for delivery are incurred. The varioous choices vary from toppings, sizes and crust. The user is then alerted his bill and notified what he/she had ordered for. 
+
+# SetUp/Installation Requirements
+To visit our website and check out our designs, just follow the simple steps below:
+1. Make sure you are connected to the internet.
+2. Open your web browser,
+3. Finally click on this link https://ashisoma.github.io/Pizza-Hub/
+4. You can then check out our pizza and order, choose a delivery or pick-up at our station.
+
+
