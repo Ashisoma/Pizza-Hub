@@ -13,4 +13,12 @@ To visit our website and check out our designs, just follow the simple steps bel
 3. Finally click on this link https://ashisoma.github.io/Pizza-Hub/
 4. You can then check out our pizza and order, choose a delivery or pick-up at our station.
 
+## Support and Contact details
+For any support required, concerns or ideas and any discrepancies on running the code make sure to reach out to me prefferably via my email address : okalionesmus@gmail.com 
 
+## Technology Used
+The programming languages used to build this website are HTML and CSS for the front end. For back-end, jQuery was used and also to make the web page interactive to the user. The website also makes a lot of use of Bootstrap styling. 
+
+### Licence
+* MIT Licencing
+Copyright (c) 2020, **Onesmus Okali**
