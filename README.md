@@ -1,7 +1,7 @@
 # Pizza-Hub
 ### A website application for ordering Pizza 
 
-### By **ONesmus Okali**
+### By **Onesmus Okali**
 
 # Description
 This web application for my restaurant dubbed Pizza-Hub.The web application enables the user to choose the type of pizza they want. Have it picked up or dropped at the specified location under which the payments for delivery are incurred. The varioous choices vary from toppings, sizes and crust. The user is then alerted his bill and notified what he/she had ordered for. 
