@@ -27,4 +27,29 @@ function calculate() {
 
 }
 
-$('.carousel').carousel()
+$(document).ready(function () {
+    $("#submit").click(function () {
+
+    })
+})
+$("#checkout").click(function () {
+    $("#show-order").show(1000)
+})
+
+$(document).ready(function () {
+    var size = $("#sizes").val()
+    var crusts = $("#crusts").val()
+    var toppings = $("#toppings").val()
+    var number = $("#sizes").val()
+    var results = (toppings + size + crusts) * number;
+    $("#checkout").click(function () {
+        $("table").append("<tbody>" +
+            "<tr>" +
+            "<td>" + "#" + "</td>" +
+            "<td>" + number + "</td>" +
+            "<td>" + size + "</td>" +
+            "<td>" + results + "</td>" +
+            "</tr>" +
+            "</tbody>")
+    })
+});

@@ -45,7 +45,7 @@
                 <div class="carousel-item">
                     <img src="images/34.jpeg" class="d-block w-100" style="height: 600px;" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        
+
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -63,8 +63,6 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-
-
         <form id="maker-order" class="pt-5 container">
             <h3 class="text-center text-white">Pizza Sizes</h3>
             <select class="custom-select" id="sizes">
@@ -79,29 +77,54 @@
                 <option value="200">Pizza Baggle Ksh. 200</option>
                 <option value="150">Cheese on cheese Ksh. 150</option>
                 <option value="100">Flatbread Ksh. 100</option>
-
             </select>
             <h3 class="text-center text-white">Pizza Toppings</h3>
-
             <select name="" class="custom-select" id="toppings">
                 <option selected></option>
                 <option value="250">Pepperoni Ksh.250/=</option>
                 <option value="150">Mushrooms Ksh.150/=</option>
                 <option value="150">Bacons Ksh. 150/=</option>
-
             </select>
             <div class="form-group text-center pt-2">
-                <input type="number" style="width: 100px; align-items:center; color:black;" class="form-control"
+                <input type="number" style=" align-items:center; color:black;" class="form-control"
                     name="fname" id="number" placeholder="Number of pizza" min="1" required>
             </div>
     </div>
     <div class=" text-center pb-5">
+
+        <div class="pb-3">
+            <button type="number" class="btn btn-info" id="checkout">check out</button>
+
+        </div>
+
         <span class="bl-4">
             <button type="number" class="btn btn-success" onclick="calculateTotal()">Delivered</button>
         </span>
         <button type="number" class="btn btn-info" onclick="calculate()">Pick-up</button>
     </div>
     </form>
+
+    <div class="jumbotron container" id="show-order">
+        <h2>My Order</h2>
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Size</th>
+                    <th scope="col">Crust</th>
+                    <th scope="col">Toppings</th>
+                    <th scope="col">Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="inputed-size"></td>
+                    <td id="inputted-crust"></td>
+                    <td id="inputted-topping"></td>
+                    <td id="price"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
     <div class="card text-center bg-dark text-white">
         <h2 class="card-header bg-dark text-white">Contacts</h2>
         <div class="card-body">
