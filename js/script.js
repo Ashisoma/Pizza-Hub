@@ -27,29 +27,37 @@ function calculate() {
 
 }
 
-$(document).ready(function () {
-    $("#submit").click(function () {
 
-    })
-})
-$("#checkout").click(function () {
-    $("#show-order").show(1000)
-})
 
-$(document).ready(function () {
-    var size = $("#sizes").val()
-    var crusts = $("#crusts").val()
-    var toppings = $("#toppings").val()
-    var number = $("#sizes").val()
-    var results = (toppings + size + crusts) * number;
-    $("#checkout").click(function () {
+$(document).ready(function (event) {
+    function getSize() {
+        var size = document.getElementById("sizes").value;
+        return parseInt(size);
+    }
+    function getFlavour() {
+        var flavour = document.getElementById("crusts").value;
+        return parseInt(flavour);
+    }
+    function getTopping() {
+        var topping = document.getElementById("toppings").value;
+        return parseInt(topping);
+    }
+    function getNumber() {
+        var number = document.getElementById("number").value;
+        return parseInt(number);
+    } 
+    function getResult(){
+        return (getSize() + getTopping() + getFlavour()) * getNumber()};
+    $("#checkout").click(function (event) {
+        event.preventDefault();
         $("table").append("<tbody>" +
             "<tr>" +
-            "<td>" + "#" + "</td>" +
-            "<td>" + number + "</td>" +
-            "<td>" + size + "</td>" +
-            "<td>" + results + "</td>" +
+            "<td>" + getSize() + "</td>" +
+            "<td>" + getFlavour() + "</td>" +
+            "<td>" + getTopping() + "</td>" +
+            "<td>" + getResult() + "</td>" +
             "</tr>" +
             "</tbody>")
     })
+    
 });
